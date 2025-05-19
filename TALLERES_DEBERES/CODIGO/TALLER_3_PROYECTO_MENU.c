@@ -318,7 +318,7 @@ void ejercicio9() {
     getchar(); // Esperar Enter
 }
 
-// Fuera de la función anterior
+
 int esPrimo(int n) {
     if (n <= 1) return 0;
 
@@ -360,35 +360,35 @@ void ejercicios11a20() {
 
         switch(opcion2) {
             case 11:
-                ejercicio11(); // submenú 1
+                ejercicio11(); 
                 break;
             case 12:
-                ejercicio12(); // submenú 2
+                ejercicio12(); 
                 break;
             case 13:
-                ejercicio13(); // submenú 3
+                ejercicio13();
                 break;
             case 14:
-                ejercicio14(); // submenú 3
+                ejercicio14(); 
                 break;
             case 15:
-                ejercicio15(); // submenú 3
+                ejercicio15(); 
                 break;
             case 16:
-                ejercicio16(); // submenú 3
+                ejercicio16(); 
                 break;    
             case 17:
-                ejercicio17(); // submenú 3
+                ejercicio17(); 
                 break; 
   
             case 18:
-                ejercicio18(); // submenú 3
+                ejercicio18();
                 break;
             case 19:
-                ejercicio19(); // submenú 3
+                ejercicio19(); 
                 break;
             case 20:
-                ejercicio20(); // submenú 3
+                ejercicio20(); 
                 break;
             case 0:
                
@@ -539,7 +539,7 @@ void ejercicio18(){
 
 void ejercicio19(){
     
-    int contrasenaCorrecta = 1234;  // Puedes cambiar la contraseña
+    int contrasenaCorrecta = 1234;  
     int intento;
 
     printf("Ejercicio 19: Validar contraseña numérica hasta que sea correcta\n");
