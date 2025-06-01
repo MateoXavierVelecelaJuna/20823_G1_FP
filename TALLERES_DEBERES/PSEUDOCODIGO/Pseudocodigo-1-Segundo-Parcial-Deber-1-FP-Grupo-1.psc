@@ -1,3 +1,8 @@
+//Universidad de las fuerzas Armadas "ESPE"
+//GRUPO 1: ALEXANDER ALVEAR, ANTHONY CAMPOVERDE, MATEO VELECELA
+//CODIGO 1; U2 T1
+//VECTOR CON TERMINO GENERAL
+
 Algoritmo VectorConTerminoGeneral
     Definir n, i Como Entero
     Dimension vec[100]  // Índices van de 1 a 100 en PSeInt
