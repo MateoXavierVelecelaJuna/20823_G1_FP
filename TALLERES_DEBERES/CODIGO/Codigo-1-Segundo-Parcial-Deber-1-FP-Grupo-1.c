@@ -1,3 +1,8 @@
+//Universidad de las fuerzas Armadas "ESPE"
+//GRUPO 1: ALEXANDER ALVEAR, ANTHONY CAMPOVERDE, MATEO VELECELA
+//CODIGO 1; U2 T1
+//VECTOR CON TERMINO GENERAL
+
 #include <stdio.h>
 #include <stdlib.h>
 
