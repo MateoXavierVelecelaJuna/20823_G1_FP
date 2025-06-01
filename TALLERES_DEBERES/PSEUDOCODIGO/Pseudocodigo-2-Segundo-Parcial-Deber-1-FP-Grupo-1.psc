@@ -1,3 +1,8 @@
+//Universidad de las fuerzas Armadas "ESPE"
+//GRUPO 1: ALEXANDER ALVEAR, ANTHONY CAMPOVERDE, MATEO VELECELA
+//CODIGO 2; U2 T1
+//COMPROBAR VALORES EN VECTOR
+
 Algoritmo ComprobarValoresEnVector
     // Definir el vector predefinido
     Definir vec Como Entero
@@ -19,18 +24,18 @@ Algoritmo ComprobarValoresEnVector
 	vec[15] <- 10
 
     
-    // Variables para los números y banderas
+    // Variables para los nÃºmeros y banderas
     Definir num1, num2, flag1, flag2, i Como Entero
     flag1 <- 0
     flag2 <- 0
     
-    // Leer los números del usuario
-    Escribir "Ingrese el primer número: "
+    // Leer los nÃºmeros del usuario
+    Escribir "Ingrese el primer nÃºmero: "
     Leer num1
-    Escribir "Ingrese el segundo número: "
+    Escribir "Ingrese el segundo nÃºmero: "
     Leer num2
     
-    // Recorrer el vector para buscar los números
+    // Recorrer el vector para buscar los nÃºmeros
     Para i <- 1 Hasta 15 Hacer
         Si vec[i] = num1 Entonces
             flag1 <- 1
@@ -42,8 +47,8 @@ Algoritmo ComprobarValoresEnVector
     
     // Verificar resultados
     Si flag1 = 1 Y flag2 = 1 Entonces
-        Escribir "Ambos números están en el vector."
+        Escribir "Ambos nÃºmeros estÃ¡n en el vector."
     Sino
-        Escribir "Al menos uno de los números no está en el vector."
+        Escribir "Al menos uno de los nÃºmeros no estÃ¡ en el vector."
     FinSi
 FinAlgoritmo
