@@ -6,22 +6,22 @@
 Algoritmo ComprobarValoresEnVector
     // Definir el vector predefinido
     Definir vec Como Entero
-    Dimension vec[15]  // Ejemplo: vector de 5 elementos
+    Dimension vec[15]  
     vec[1] <- 4
     vec[2] <- 7
     vec[3] <- 12
     vec[4] <- 19
     vec[5] <- 28
-	vec[6] <- 46
-	vec[7] <- 9
-	vec[8] <- 6
+    vec[6] <- 46
+    vec[7] <- 9
+    vec[8] <- 6
     vec[9] <- 78
     vec[10] <- 89
     vec[11] <- 21
     vec[12] <- 95
     vec[13] <- 1
-	vec[14] <- 73
-	vec[15] <- 10
+    vec[14] <- 73
+    vec[15] <- 10
 
     
     // Variables para los números y banderas
