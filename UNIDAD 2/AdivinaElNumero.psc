@@ -5,7 +5,7 @@ Algoritmo AdivinaElNumero
     numero_secreto <- Aleatorio(1, 100)
     
     Para i <- 1 Hasta 5 Hacer
-        Escribir "Intento ", i, "/5: Adivina el nero (1-100): "
+        Escribir "Intento ", i, "/5: Adivina el numero (1-100): "
         Leer intento_usuario
         
         Si intento_usuario < numero_secreto Entonces
