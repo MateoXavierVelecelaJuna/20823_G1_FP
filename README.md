@@ -2,6 +2,6 @@
 Grupo número 1 para FP
 
 Integrantes del grupo
-Anthony Campoverde,
-Alexander Alvear,
-Mateo Velecela.
+Anthony Campoverde/n
+Alexander Alvear/n
+Mateo Velecela/n
