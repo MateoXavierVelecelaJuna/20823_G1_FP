@@ -4,7 +4,7 @@
 //COMPROBAR VALORES EN VECTOR
 
 Algoritmo ComprobarValoresEnVector
-    // Definir el vector predefinido
+
     Definir vec Como Entero
     Dimension vec[15]  
     vec[1] <- 4
@@ -24,18 +24,18 @@ Algoritmo ComprobarValoresEnVector
     vec[15] <- 10
 
     
-    // Variables para los números y banderas
+ 
     Definir num1, num2, flag1, flag2, i Como Entero
     flag1 <- 0
     flag2 <- 0
     
-    // Leer los números del usuario
+   
     Escribir "Ingrese el primer número: "
     Leer num1
     Escribir "Ingrese el segundo número: "
     Leer num2
     
-    // Recorrer el vector para buscar los números
+   
     Para i <- 1 Hasta 15 Hacer
         Si vec[i] = num1 Entonces
             flag1 <- 1
@@ -45,7 +45,7 @@ Algoritmo ComprobarValoresEnVector
         FinSi
     FinPara
     
-    // Verificar resultados
+   
     Si flag1 = 1 Y flag2 = 1 Entonces
         Escribir "Ambos números están en el vector."
     Sino
