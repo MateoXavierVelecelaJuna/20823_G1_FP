@@ -1,3 +1,8 @@
+//Universidad de las fuerzas Armadas "ESPE"
+//GRUPO 1: ALEXANDER ALVEAR, ANTHONY CAMPOVERDE, MATEO VELECELA
+//CODIGO 3; U2 T1
+//FACTORIALES EN VECTOR
+
 Algoritmo VectorFactorialesGrandes
     // definicion de variables, unas como entero otra como real (por lo grande que es)
     Definir Vec, j Como Entero
