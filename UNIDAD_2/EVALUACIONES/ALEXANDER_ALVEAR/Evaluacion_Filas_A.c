@@ -3,33 +3,32 @@
 //Alexander Alvear
 //Evaluacion 2
 #include <stdio.h>
-#define MAX 10                                 //COLOCO UN LIMITE MAXIMO DE 10 PARA QUE EL PROGRAMA NO SE SATURE SI EL USUARIO INGRESA VALORES MUY ALTOS PARA LA MATRIZ
 
 int main(){
 
     int F, C, fila, i, j, maximo;
-    int matriz[MAX][MAX];
+    int matriz[100][100];
 
 
     do {
-        printf("Ingrese el tamano fila de la matriz (entre 1 y 10): ");
+        printf("Ingrese el tamano fila de la matriz (entre 1 y 100): ");
         scanf("%d", &F);
 
-        if (F <= 0 || F > 10) {
-            printf("Error: Fila debe estar entre 1 y 10, intente nuevamente.\n");       //VALIDAMOS PARA TRATAR DE EVITAR SATURACION EN LA MEMORIA
+        if (F <= 0 || F > 100) {
+            printf("Error: Fila debe estar entre 1 y 100, intente nuevamente.\n");       //VALIDAMOS PARA TRATAR DE EVITAR SATURACION EN LA MEMORIA
         }
 
-    } while (F <= 0 || F > 10);
+    } while (F <= 0 || F > 100);
 
     do {
-        printf("Ingrese el tamano columna de la matriz (entre 1 y 10): ");
+        printf("Ingrese el tamano columna de la matriz (entre 1 y 100): ");
         scanf("%d", &C);
 
-        if (C <= 0 || C > 10) {
+        if (C <= 0 || C > 100) {
             printf("Error: N debe estar entre 1 y 10, intente nuevamente.\n");
         }
 
-    } while (C <= 0 || C > 10);
+    } while (C <= 0 || C > 100);
 
     for (i = 0; i < F; i++) {
         for (j = 0; j < C; j++) {
