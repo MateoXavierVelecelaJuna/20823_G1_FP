@@ -25,7 +25,7 @@ int main(){
         scanf("%d", &C);
 
         if (C <= 0 || C > 100) {
-            printf("Error: N debe estar entre 1 y 10, intente nuevamente.\n");
+            printf("Error: N debe estar entre 1 y 100, intente nuevamente.\n");
         }
 
     } while (C <= 0 || C > 100);
