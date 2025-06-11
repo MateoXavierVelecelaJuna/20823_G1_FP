@@ -16,7 +16,7 @@ int main(){
         scanf("%d", &F);
 
         if (F <= 0 || F > 10) {
-            printf("Error: Fila debe estar entre 1 y 10, intente nuevamente.\n");       //VALIDAMOS PARA EVITAR O TRATAR DE EVITAR SATURACION EN LA MEMORIA
+            printf("Error: Fila debe estar entre 1 y 10, intente nuevamente.\n");       //VALIDAMOS PARA TRATAR DE EVITAR SATURACION EN LA MEMORIA
         }
 
     } while (F <= 0 || F > 10);
@@ -39,18 +39,18 @@ int main(){
         }
     }
 
-    printf("Ingrese el numero de fila (entre 1 y %d) para buscar el maximo: ", F);    //PEDIMOS EL NUMERO DE FILA PARA CALCULAR EL MAYOR RF3
+    printf("Ingrese el numero de fila (entre 1 y %d) para buscar el maximo: ", F);    //PEDIMOS EL NUMERO DE FILA PARA CALCULAR EL MAYOR 
     scanf("%d", &fila);
 
 
     while (fila < 1 || fila > F) {
-        printf("Fila fuera de rango, intente nuevamente: ");   //VALIDAMOS FILA
+        printf("Fila fuera de rango, intente nuevamente: ");   
         scanf("%d", &fila);
     }
 
-    fila = fila - 1;    //AJUSTAMOS EL INDICE DE FILA
+    fila = fila - 1;    
 
-    maximo = matriz[fila][0];   //CALCULO DEL VALOR MAXIMO EN LA FILA RF4
+    maximo = matriz[fila][0];   //CALCULO DEL VALOR MAXIMO EN LA FILA 
 
     for (j = 1; j < F; j++) {
         if (matriz[fila][j] > maximo) {
