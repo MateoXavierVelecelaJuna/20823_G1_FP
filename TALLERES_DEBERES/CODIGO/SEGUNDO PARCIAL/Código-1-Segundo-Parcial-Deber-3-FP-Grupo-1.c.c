@@ -6,7 +6,7 @@ int main() {
     int aux;
 
 
-    printf("Ingrese el tamano N de la matriz NxN: ");      //Leer el tamaño de la matriz
+    printf("Ingrese el tamano N de la matriz NxN: ");      //Leer el tamaÃ±o de la matriz
     scanf("%d", &N);
 
 
@@ -19,9 +19,9 @@ int main() {
     }
 
 
-    printf("Ingrese el número de la fila i a intercambiar (0 a %d): ", N - 1);
+    printf("Ingrese el nÃºmero de la fila i a intercambiar (0 a %d): ", N - 1);
     scanf("%d", &i);                                                                     //indices de la matriz
-    printf("Ingrese el número de la fila j a intercambiar (0 a %d): ", N - 1);
+    printf("Ingrese el nÃºmero de la fila j a intercambiar (0 a %d): ", N - 1);
     scanf("%d", &j);
 
 
@@ -33,7 +33,7 @@ int main() {
         }
 
 
-        printf("Matriz después de intercambiar filas %d y %d:\n", i, j);
+        printf("Matriz despuÃ©s de intercambiar filas %d y %d:\n", i, j);
         for (int f = 0; f < N; f++) {
             for (int c = 0; c < N; c++) {                                    //imprimir matriz resultante
                 printf("%d ", mat[f][c]);
@@ -41,7 +41,7 @@ int main() {
             printf("\n");
         }
     } else {
-        printf("Índices fuera de rango, no se realizó el intercambio.\n");
+        printf("Ãndices fuera de rango, no se realizÃ³ el intercambio.\n");
     }
 
     return 0;
