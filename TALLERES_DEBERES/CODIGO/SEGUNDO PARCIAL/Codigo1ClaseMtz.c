@@ -2,15 +2,15 @@
 
 int main() {
     int N, i, j;
-    int matriz[10][10];  // Tamaño máximo de 10x10
+    int matriz[10][10];  // TamaÃ±o mÃ¡ximo de 10x10
 
-    // Solicitar tamaño de la matriz
-    printf("Ingrese el tamaño N de la matriz cuadrada (N x N, máximo 10): ");
+    // Solicitar tamaÃ±o de la matriz
+    printf("Ingrese el tamaÃ±o N de la matriz cuadrada (N x N, mÃ¡ximo 10): ");
     scanf("%d", &N);
 
-    // Validar tamaño
+    // Validar tamaÃ±o
     if (N <= 0 || N > 10) {
-        printf("Tamaño inválido. Debe ser entre 1 y 10.\n");
+        printf("TamaÃ±o invÃ¡lido. Debe ser entre 1 y 10.\n");
         return 1; // Terminar el programa con error
     }
 
