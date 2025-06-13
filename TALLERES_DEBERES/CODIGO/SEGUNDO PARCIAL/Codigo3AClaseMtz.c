@@ -3,15 +3,15 @@
 int main() {
     int N, i, j, fila_i, fila_j, aux;
 
-    int matriz[10][10]; // Matriz máxima 10x10
+    int matriz[10][10]; // Matriz mÃ¡xima 10x10
 
-    // Solicitar tamaño de la matriz
-    printf("Ingrese el tamaño N de la matriz cuadrada (N x N, máximo 10): ");
+    // Solicitar tamaÃ±o de la matriz
+    printf("Ingrese el tamaÃ±o N de la matriz cuadrada (N x N, mÃ¡ximo 10): ");
     scanf("%d", &N);
 
-    // Validar tamaño
+    // Validar tamaÃ±o
     if (N <= 0 || N > 10) {
-        printf("Tamaño inválido. Debe ser entre 1 y 10.\n");
+        printf("TamaÃ±o invÃ¡lido. Debe ser entre 1 y 10.\n");
         return 1; // Salir con error
     }
 
@@ -35,12 +35,12 @@ int main() {
     printf("Ingrese las filas a intercambiar (i y j, entre 1 y %d): ", N);
     scanf("%d %d", &fila_i, &fila_j);
 
-    // Validar filas (restar 1 para índices base 0)
+    // Validar filas (restar 1 para Ã­ndices base 0)
     if (fila_i < 1 || fila_i > N || fila_j < 1 || fila_j > N) {
         printf("Error: Las filas deben estar entre 1 y %d.\n", N);
         return 1;
     }
-    fila_i--; // Ajustar a índice base 0
+    fila_i--; // Ajustar a Ã­ndice base 0
     fila_j--;
 
     // Intercambiar filas
