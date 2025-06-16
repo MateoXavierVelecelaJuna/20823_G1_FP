@@ -3,7 +3,7 @@ Algoritmo IntercambiarFilas
     Definir N, i, j, f, c, aux Como Entero
     Dimension mat[100,100]
 	
-    Escribir "Ingrese el tamaño N de la matriz cuadrada:"
+    Escribir "Ingrese el tamaÃ±o N de la matriz cuadrada:"
     Leer N
 	
     Escribir "Ingrese los elementos de la matriz:"
@@ -14,10 +14,10 @@ Algoritmo IntercambiarFilas
         Fin Para
     Fin Para
 	
-    Escribir "Ingrese el número de la fila i a intercambiar (entre 1 y ", N, "):"
+    Escribir "Ingrese el nÃºmero de la fila i a intercambiar (entre 1 y ", N, "):"
     Leer i
 	
-    Escribir "Ingrese el número de la fila j a intercambiar (entre 1 y ", N, "):"
+    Escribir "Ingrese el nÃºmero de la fila j a intercambiar (entre 1 y ", N, "):"
     Leer j
 	
     Si i >= 1 Y i <= N Y j >= 1 Y j <= N Entonces
@@ -28,7 +28,7 @@ Algoritmo IntercambiarFilas
             mat[j, c] <- aux
         Fin Para
 		
-        Escribir "Matriz después del intercambio:"
+        Escribir "Matriz despuÃ©s del intercambio:"
         Para f <- 1 Hasta N Con Paso 1
             Para c <- 1 Hasta N Con Paso 1
                 Escribir mat[f, c] Sin Saltar
@@ -38,7 +38,7 @@ Algoritmo IntercambiarFilas
         Fin Para
 		
     Sino
-        Escribir "Índices fuera de rango. No se realizó el intercambio."
+        Escribir "Ãndices fuera de rango. No se realizÃ³ el intercambio."
     Fin Si
 	
 FinAlgoritmo
