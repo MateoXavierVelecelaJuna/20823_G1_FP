@@ -7,7 +7,7 @@ int main() {
     printf("Ejercicio 19: Validar contraseña numérica hasta que sea correcta\n");
 
     do {
-        printf("Ingrese la contraseña numérica: ");
+        printf("Ingrese la contraseña numerica: ");
         scanf("%d", &intento);
 
         if (intento != contrasenaCorrecta) {
