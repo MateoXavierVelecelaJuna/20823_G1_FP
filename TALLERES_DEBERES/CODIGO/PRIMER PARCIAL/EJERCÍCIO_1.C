@@ -4,7 +4,7 @@ int main()
 {
 float a, b, res; 
     printf("Ejercicio 1: Media de dos valores\n");
-    printf("Ingrese el Primer Número: ");
+    printf("Ingrese el Primer Numero: ");
     scanf("%f", &a);
 
     printf("Ingrese el Segundo Número: ");
