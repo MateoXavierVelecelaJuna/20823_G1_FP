@@ -13,7 +13,7 @@ int main() {
     int N, fila_i, fila_j;
     int matriz[MAX][MAX];
 
-    N = leerTamanio();                       // Leer tamaño de matriz
+    N = leerTamanio();                       // Leer tamaÃ±o de matriz
     llenarMatriz(matriz, N);                // Llenar matriz
     printf("Matriz original:\n");
     mostrarMatriz(matriz, N);               // Mostrar matriz original
@@ -27,19 +27,19 @@ int main() {
     return 0;
 }
 
-// Función para leer tamaño de la matriz
+// FunciÃ³n para leer tamaÃ±o de la matriz
 int leerTamanio() {
     int n;
-    printf("Ingrese el tamaño N de la matriz cuadrada (N x N, máximo %d): ", MAX);
+    printf("Ingrese el tamaÃ±o N de la matriz cuadrada (N x N, mÃ¡ximo %d): ", MAX);
     scanf("%d", &n);
     if (n <= 0 || n > MAX) {
-        printf("Tamaño inválido. Debe ser entre 1 y %d.\n", MAX);
+        printf("TamaÃ±o invÃ¡lido. Debe ser entre 1 y %d.\n", MAX);
         return 1;
     }
     return n;
 }
 
-// Función para llenar la matriz con valores secuenciales
+// FunciÃ³n para llenar la matriz con valores secuenciales
 void llenarMatriz(int matriz[MAX][MAX], int N) {
     for (int i = 0; i < N; i++) {
         for (int j = 0; j < N; j++) {
@@ -48,7 +48,7 @@ void llenarMatriz(int matriz[MAX][MAX], int N) {
     }
 }
 
-// Función para mostrar la matriz
+// FunciÃ³n para mostrar la matriz
 void mostrarMatriz(int matriz[MAX][MAX], int N) {
     for (int i = 0; i < N; i++) {
         for (int j = 0; j < N; j++) {
@@ -58,7 +58,7 @@ void mostrarMatriz(int matriz[MAX][MAX], int N) {
     }
 }
 
-// Función para leer las filas que se desean intercambiar
+// FunciÃ³n para leer las filas que se desean intercambiar
 void leerFilasAIntercambiar(int N, int *fila_i, int *fila_j) {
     printf("Ingrese las filas a intercambiar (i y j, entre 1 y %d): ", N);
     scanf("%d %d", fila_i, fila_j);
@@ -68,11 +68,11 @@ void leerFilasAIntercambiar(int N, int *fila_i, int *fila_j) {
         return;
     }
 
-    (*fila_i)--; // Ajustar a índice base 0
+    (*fila_i)--; // Ajustar a Ã­ndice base 0
     (*fila_j)--;
 }
 
-// Función para intercambiar dos filas de la matriz
+// FunciÃ³n para intercambiar dos filas de la matriz
 void intercambiarFilas(int matriz[MAX][MAX], int N, int fila_i, int fila_j) {
     int aux;
     for (int j = 0; j < N; j++) {
