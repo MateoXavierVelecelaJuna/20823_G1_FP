@@ -15,29 +15,29 @@ int main() {
     int intentos[10] = {0}; // Inicializar todo en 0
     int totalIntentos, intento, gano = 0;
 
-    // RF01 – Configuración del rango
+    // RF01 â€“ ConfiguraciÃ³n del rango
     printf("Ingresa el valor minimo del rango: ");
     scanf("%d", &minimo);
     printf("Ingresa el valor maximo del rango: ");
     scanf("%d", &maximo);
 
-    // Validación de rango mínimo/máximo
+    // ValidaciÃ³n de rango mÃ­nimo/mÃ¡ximo
     if (minimo >= maximo) {
-        printf("El minimo debe ser menor que el máximo, programa terminado.\n");
+        printf("El minimo debe ser menor que el mÃ¡ximo, programa terminado.\n");
         return 1;
     }
 
-    // RF02 – Configuración del número de intentos (máximo 10)
+    // RF02 â€“ ConfiguraciÃ³n del nÃºmero de intentos (mÃ¡ximo 10)
     do {
-        printf("¿Cuantos intentos quieres usar? (maximo 10): ");
+        printf("Â¿Cuantos intentos quieres usar? (maximo 10): ");
         scanf("%d", &totalIntentos);
     } while (totalIntentos < 1 || totalIntentos > 10);
 
-    // Inicializar número aleatorio dentro del rango
+    // Inicializar nÃºmero aleatorio dentro del rango
     srand(time(NULL));
     numeroSecreto = (rand() % (maximo - minimo + 1)) + minimo;
 
-    // RF03, RF04 – Juego
+    // RF03, RF04 â€“ Juego
     for (int i = 0; i < totalIntentos; i++) {
         do {
             printf("Intento %d: Ingresa un numero entre %d y %d: ", i + 1, minimo, maximo);
@@ -51,7 +51,7 @@ int main() {
         intentos[i] = intento; // RF04
 
         if (intento == numeroSecreto) {
-            printf("Correcto, Adivinaste el número.\n");
+            printf("Correcto, Adivinaste el nÃºmero.\n");
             gano = 1;
             break;
         } else if (intento < numeroSecreto) {
@@ -61,7 +61,7 @@ int main() {
         }
     }
 
-    // RF05 – Mostrar resumen
+    // RF05 â€“ Mostrar resumen
     printf("\n RESUMEN DEL JUEGO\n");
     for (int i = 0; i < totalIntentos; i++) {
         printf("Intento %d: %d\n", i + 1, intentos[i]);
