@@ -17,7 +17,7 @@ int main() {
     int intento, resultado, repetido;
     int gano = 0;
 
-    // RF01 – Configuracion dinamica del rango
+    // RF01 â€“ Configuracion dinamica del rango
     printf("Ingrese el valor minimo del rango: ");
     scanf("%d", &minimo);
     printf("Ingrese el valor maximo del rango: ");
@@ -28,7 +28,7 @@ int main() {
         return 1;
     }
 
-    // RF02 – Configuracion dinamica de intentos
+    // RF02 â€“ Configuracion dinamica de intentos
     do {
         printf("Cuantos intentos desea usar? (maximo %d): ", MAX_INTENTOS);
         scanf("%d", &totalIntentos);
@@ -49,7 +49,7 @@ int main() {
                 continue;
             }
 
-            // RF03 – Validacion de duplicados
+            // RF03 â€“ Validacion de duplicados
             repetido = 0;
             for (int j = 0; j < i; j++) {
                 if (matriz[j][1] == intento) {
@@ -76,7 +76,7 @@ int main() {
             gano = 1;
         }
 
-        // RF04 – Registrar en matriz
+        // RF04 â€“ Registrar en matriz
         matriz[i][0] = i + 1;
         matriz[i][1] = intento;
         matriz[i][2] = resultado;
@@ -84,7 +84,7 @@ int main() {
         if (gano) break;
     }
 
-    // RF05 – Mostrar resumen
+    // RF05 â€“ Mostrar resumen
     printf("\nRESUMEN DEL JUEGO\n");
     printf("Intento | Valor ingresado | Resultado\n");
     printf("-------------------------------------\n");
