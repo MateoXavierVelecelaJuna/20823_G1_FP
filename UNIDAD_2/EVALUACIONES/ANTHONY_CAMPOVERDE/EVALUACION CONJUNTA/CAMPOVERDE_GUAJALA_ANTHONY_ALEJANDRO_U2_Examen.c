@@ -18,7 +18,7 @@ int main (){
     int intento, resultado, repetido;
     int gano = 0;
 
-    // RF01 – Configuracion dinamica del rango: el usuario define el rango minimo y maximo del numero secreto
+    // RF01 â€“ Configuracion dinamica del rango: el usuario define el rango minimo y maximo del numero secreto
     printf("Ingresa el valor minimo rango: ");
     scanf("%d", &minimo);
     printf("Ingresa el valor maximo rango: ");
@@ -50,7 +50,7 @@ int main (){
                 continue;
             }
 
-    // RF03 – Validacion de duplicados: El programa debe validar que cada intento este dentro del rango y no se repita
+    // RF03 â€“ Validacion de duplicados: El programa debe validar que cada intento este dentro del rango y no se repita
             repetido = 0;
             for (int j = 0; j < i; j++) {
                 if (matriz[j][1] == intento) {
@@ -64,7 +64,7 @@ int main (){
             }
         } while (intento < minimo || intento > maximo || repetido);
 
-        // Determinar resultado, para poder saber si es más alto o más bajo y poder tenerlo en cuenta en matriz con resultados
+        // Determinar resultado, para poder saber si es mÃ¡s alto o mÃ¡s bajo y poder tenerlo en cuenta en matriz con resultados
         if (intento < numeroSecreto) {
             resultado = 0; // bajo
             printf("Muy bajo.\n");
@@ -77,7 +77,7 @@ int main (){
             gano = 1;
         }
 
-  // RF04 – Registrar intentos en matriz: El programa debe almacenar en una matriz el numero de intento, el valor ingresado y el resultado (0 bajo, 1 alto, 2 correcto)
+  // RF04 â€“ Registrar intentos en matriz: El programa debe almacenar en una matriz el numero de intento, el valor ingresado y el resultado (0 bajo, 1 alto, 2 correcto)
         matriz[i][0] = i + 1;
         matriz[i][1] = intento;
         matriz[i][2] = resultado;
@@ -86,7 +86,7 @@ int main (){
     }
 
 
-    // RF05 – Mostrar resumen: El programa debe mostrar una tabla con cada intento y el textual, revelar el numero secreo si no se adivino
+    // RF05 â€“ Mostrar resumen: El programa debe mostrar una tabla con cada intento y el textual, revelar el numero secreo si no se adivino
     printf("\nRESUMEN DEL JUEGO\n");
     printf("Intento | Valor ingresado | Resultado\n");
     printf("-------------------------------------\n");
