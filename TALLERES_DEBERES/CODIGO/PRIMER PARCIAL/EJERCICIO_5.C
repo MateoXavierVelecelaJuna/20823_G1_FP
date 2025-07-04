@@ -3,7 +3,7 @@
 int main()
 {
  int numero, horas, minutos, dias, y;
-    printf("Ejercicio 5: Conversion de Unidades\n");
+    printf("Ejercicio 5: Conversión de Unidades\n");
     printf("Ingrese un valor en segundos: ");
     scanf("%i", &numero);
 
