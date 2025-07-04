@@ -104,6 +104,5 @@ int main (){
         printf("\nFelicidades por adivinar el numero secreto.\n");
     }
 
-
    return 0;
 }
