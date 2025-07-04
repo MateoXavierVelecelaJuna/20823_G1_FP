@@ -3,7 +3,7 @@
 int main()
 {
 int n, i= 1; 
-    printf("Ejercicio 8: Raíz Entera\n");
+    printf("Ejercicio 8: Raiz Entera\n");
     printf("Ingrese un número: ");
     scanf("%i", &n);
     while(i*i<=n){
