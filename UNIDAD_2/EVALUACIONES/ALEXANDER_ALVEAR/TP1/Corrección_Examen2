@@ -1,6 +1,6 @@
-//UNIVERSIDAD DE LAS FUERZAS ARMADAS "ESPE"
-//NOMBRE: ANTHONY CAMPOVERDE
-//EVALUACION CONJUNTA SEGUNDO PARCIAL FUNDAMENTOS DE PROGRAMACION
+//Universidad de las fuerzas armadas "ESPE"
+//Alvear Alexander
+//Examen Segundo Parcial
 
 #include <stdio.h>
 #include <stdlib.h>
@@ -62,7 +62,6 @@ int main (){
             }
         } while (intento < minimo || intento > maximo || repetido);
 
-        // Determinar resultado, para poder saber si es más alto o más bajo y poder tenerlo en cuenta en matriz con resultados
         if (intento < numeroSecreto) {
             resultado = 0; // bajo
             printf("Muy bajo.\n");
