@@ -4,11 +4,11 @@ int main()
 {
 float var1,var2,var3,exe;
     printf("Ejercicio 6: Media de numeros positivos\n");
-    printf("Ingrese primer número positivo: ");
+    printf("Ingrese primer numero positivo: ");
     scanf("%f", &var1);
-    printf("Ingrese segundo número positivo: ");
+    printf("Ingrese segundo numero positivo: ");
     scanf("%f", &var2);
-    printf("Ingrese tercer número positivo: ");
+    printf("Ingrese tercer numero positivo: ");
     scanf("%f", &var3);
 
     exe=(var1+var2+var3)/3;
