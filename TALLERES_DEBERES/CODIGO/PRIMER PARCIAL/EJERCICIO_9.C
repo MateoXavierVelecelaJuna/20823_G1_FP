@@ -7,7 +7,7 @@ int main() {
 
     int b, u;
 
-    printf("Ejercicio 9: Números primos comprendidos entre dos números dados\n");
+    printf("Ejercicio 9: Números primos comprendidos entre dos numeros dados\n");
     printf("Ingrese el primer número: ");
     scanf("%d", &b);
     printf("Ingrese el segundo número: ");
