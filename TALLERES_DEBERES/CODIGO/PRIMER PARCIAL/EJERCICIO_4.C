@@ -4,7 +4,7 @@ int main()
 {
 float z;   
     printf("Ejercicio 4: Intervalo\n");
-    printf("Ingresa un número real: ");
+    printf("Ingresa un numero real: ");
     scanf("%f", &z);
     if (z>0 && z<=10){
         printf("El número SI pertenece al intervalo (0,10]");
