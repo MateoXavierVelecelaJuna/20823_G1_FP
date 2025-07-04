@@ -2,7 +2,7 @@
 
 int main() {
 int edad;
-    printf("Ejercicio 11: Determinar si una persona es mayor de edad\n");
+    printf("Ejercicio 11: Determina si una persona es mayor de edad\n");
     printf("Ingrese su edad: ");
     scanf("%d", &edad);
 
