@@ -4,7 +4,7 @@ int main()
 {
 int num1,num2;
     printf("Ejercicio 3: Divisible\n");
-    printf("Ingrese el primer número: ");
+    printf("Ingrese el primer numero: ");
     scanf("%i", &num1);
     printf("Ingrese el segundo número: ");
     scanf("%i", &num2);
