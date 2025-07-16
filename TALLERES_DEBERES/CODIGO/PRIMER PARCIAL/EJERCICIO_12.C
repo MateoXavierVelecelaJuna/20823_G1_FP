@@ -2,7 +2,7 @@
 
 int main() {
  int numero1;
-    printf("Ejercicio 12: Calcular si un número es par o impar\n");
+    printf("Ejercicio 12: Calcular si un numero es par o impar\n");
     printf("Ingrese un número entero: ");
     scanf("%d", &numero1);
 
