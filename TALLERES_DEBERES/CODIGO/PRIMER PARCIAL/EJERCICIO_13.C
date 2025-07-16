@@ -8,7 +8,7 @@ int main() {
         scanf("%f", &nota);
 
         if (nota < 0 || nota > 10) {
-            printf("¡Nota inválida! Debe estar entre 0 y 10.\n");
+            printf("¡Nota invalida! Debe estar entre 0 y 10.\n");
         }
 
     } while (nota < 0 || nota > 10);
