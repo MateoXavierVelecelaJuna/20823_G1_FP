@@ -2,7 +2,7 @@
 
 int main() {
  int su = 0;
-    printf("Ejercicio 16: Suma de los primeros 10 números naturales\n");
+    printf("Ejercicio 16: Suma de los primeros 10 numeros naturales\n");
     for (int nu = 1; nu <= 10; nu++) {
         su += nu;
     }
