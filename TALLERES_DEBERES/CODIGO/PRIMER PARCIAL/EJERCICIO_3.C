@@ -6,7 +6,7 @@ int num1,num2;
     printf("Ejercicio 3: Divisible\n");
     printf("Ingrese el primer numero: ");
     scanf("%i", &num1);
-    printf("Ingrese el segundo número: ");
+    printf("Ingrese el segundo numero: ");
     scanf("%i", &num2);
     
     if(num2==0){
