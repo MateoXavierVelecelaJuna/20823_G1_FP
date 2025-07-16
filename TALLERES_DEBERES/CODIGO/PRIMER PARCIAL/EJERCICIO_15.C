@@ -2,7 +2,7 @@
 
 int main() {
 int nu;
-    printf("Ejercicio 15: Determinar si un número es positivo, negativo o cero\n");
+    printf("Ejercicio 15: Determinar si un numero es positivo, negativo o cero\n");
     printf("Ingrese el numero: ");
     scanf("%d", &nu);
 
