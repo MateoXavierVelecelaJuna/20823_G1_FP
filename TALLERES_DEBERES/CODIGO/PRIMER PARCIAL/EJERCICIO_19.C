@@ -4,7 +4,7 @@ int main() {
  int contrasenaCorrecta = 1234;  // Puedes cambiar la contraseña
     int intento;
 
-    printf("Ejercicio 19: Validar contraseña numérica hasta que sea correcta\n");
+    printf("Ejercicio 19: Validar contraseña numerica hasta que sea correcta\n");
 
     do {
         printf("Ingrese la contraseña numerica: ");
