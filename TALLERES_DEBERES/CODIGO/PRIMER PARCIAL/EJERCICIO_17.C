@@ -2,7 +2,7 @@
 
 int main() {
 int c;
-        printf("Ejercicio 17: Pedir números hasta ingresar uno negativo\n");
+        printf("Ejercicio 17: Pedir numeros hasta ingresar uno negativo\n");
 
     do {
         printf("Ingrese un número (negativo para terminar): ");
