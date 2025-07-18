@@ -1,7 +1,7 @@
 #include <stdio.h>
 #include <string.h>
 
-// Definici髇 de la estructura Producto
+// Definici贸n de la estructura Producto
 typedef struct {
     char id[20];         // ID del producto
     char nombre[50];     // Nombre del producto
@@ -9,7 +9,7 @@ typedef struct {
     int stock;           // Stock del producto
 } Producto;
 
-// Funci髇 para agregar un producto nuevo
+// Funci贸n para agregar un producto nuevo
 void crearProducto(Producto *p) {
     printf("Ingrese ID: ");
     fgets(p->id, 20, stdin);
@@ -27,7 +27,7 @@ void crearProducto(Producto *p) {
     getchar(); // Limpia el buffer del teclado
 }
 
-// Funci髇 para mostrar los datos de un producto
+// Funci贸n para mostrar los datos de un producto
 void mostrarProducto(Producto p) {
     printf("\nID: %s\n", p.id);
     printf("Nombre: %s\n", p.nombre);
@@ -35,7 +35,7 @@ void mostrarProducto(Producto p) {
     printf("Stock: %d\n", p.stock);
 }
 
-// Funci髇 para buscar un producto por ID
+// Funci贸n para buscar un producto por ID
 int buscarPorID(Producto lista[], int n, char id[]) {
     for (int i = 0; i < n; i++) {
         if (strcmp(lista[i].id, id) == 0) {
@@ -45,7 +45,7 @@ int buscarPorID(Producto lista[], int n, char id[]) {
     return -1;
 }
 
-// Funci髇 para eliminar un producto (vac韆 el registro)
+// Funci贸n para eliminar un producto (vac铆a el registro)
 void eliminarProducto(Producto *p) {
     strcpy(p->id, "");
     strcpy(p->nombre, "");
@@ -53,7 +53,7 @@ void eliminarProducto(Producto *p) {
     p->stock = 0;
 }
 
-// Funci髇 para guardar productos en archivo
+// Funci贸n para guardar productos en archivo
 void guardarProductosEnArchivo(Producto lista[], int cantidad) {
     FILE *archivo = fopen("productos.txt", "w");
     if (archivo == NULL) {
@@ -81,7 +81,7 @@ int main() {
     char idBuscada[20];
 
     while (1) {
-        printf("\n--- MENU CRUD DE PRODUCTOS ---\n");
+        printf("\n--- BIENVENIDO AL LA LISTA DE PRODUCTOS ---\n");
         printf("1. Agregar producto\n");
         printf("2. Mostrar todos los productos\n");
         printf("3. Buscar por ID\n");
@@ -125,7 +125,7 @@ int main() {
             printf("Saliendo...\n");
             break;
         } else {
-            printf("Opci髇 no v醠ida. Intente de nuevo.\n");
+            printf("Opci贸n no v谩lida. Intente de nuevo.\n");
         }
     }
 
