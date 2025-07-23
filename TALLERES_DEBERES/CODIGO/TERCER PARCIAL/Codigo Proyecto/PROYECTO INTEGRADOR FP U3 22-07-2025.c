@@ -21,17 +21,17 @@ ANTHONY CAMPOVERDE, MATEO VELECELA, ALEXANDER ALVEAR
 #define MAX_PROVEEDORES 50
 
 typedef struct {
-    char id[11];            // ID producto 10 dÌgitos
+    char id[11];            // ID producto 10 d√≠gitos
     char nombre[50];
     float precio;           // Precio > 0, dos decimales
     int stock;
     int stockMinimo;
-    char proveedorID[11];   // ID proveedor 10 dÌgitos
+    char proveedorID[11];   // ID proveedor 10 d√≠gitos
     int activo;
 } Producto;
 
 typedef struct {
-    char id[11];            // ID proveedor 10 dÌgitos
+    char id[11];            // ID proveedor 10 d√≠gitos
     char nombre[50];
     char telefono[20];
     char direccion[100];
@@ -81,7 +81,7 @@ void convertirMayusculas(char *texto) {
 void rellenarID(char *id) {
     // Rellena con ceros a la izquierda para que id tenga 10 caracteres
     int len = strlen(id);
-    if (len > 10) id[10] = '\0'; // cortar si es m·s largo
+    if (len > 10) id[10] = '\0'; // cortar si es m√°s largo
     if (len < 10) {
         char temp[11];
         int diff = 10 - len;
@@ -220,7 +220,7 @@ void agregarProducto() {
 
     // ID proveedor: debe existir y se autorellena
     do {
-        printf("Ingrese ID proveedor (solo n˙meros, se rellenara a 10 digitos): ");
+        printf("Ingrese ID proveedor (solo n√∫meros, se rellenara a 10 digitos): ");
         char proveedorIDtemp[20];
         fgets(proveedorIDtemp, sizeof(proveedorIDtemp), stdin);
         proveedorIDtemp[strcspn(proveedorIDtemp, "\n")] = '\0';
@@ -308,10 +308,10 @@ void editarProducto() {
             } while (1);
             productos[i].stock = stockNuevo;
 
-            // Stock mÌnimo
+            // Stock m√≠nimo
             int stockMinNuevo;
             do {
-                printf("Nuevo stock mÌnimo (%d): ", productos[i].stockMinimo);
+                printf("Nuevo stock m√≠nimo (%d): ", productos[i].stockMinimo);
                 if (scanf("%d", &stockMinNuevo) != 1) {
                     printf("Entrada invalida. Intente de nuevo.\n");
                     limpiarBuffer();
@@ -382,7 +382,7 @@ void eliminarProducto() {
         if (strcmp(productos[i].id, id) == 0 && productos[i].activo) {
             productos[i].activo = 0;
             guardarEnArchivos();
-            printf("Producto eliminado lÛgicamente.\n");
+            printf("Producto eliminado l√≥gicamente.\n");
             pausa();
             return;
         }
