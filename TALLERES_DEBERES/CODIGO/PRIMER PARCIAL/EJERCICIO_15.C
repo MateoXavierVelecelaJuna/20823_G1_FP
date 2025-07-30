@@ -7,13 +7,13 @@ int nu;
     scanf("%d", &nu);
 
     if (nu > 0) {
-        printf("El numero es positivo\n");
+        printf("El numero sera positivo\n");
     } else {
         if (nu < 0) {
-            printf("El numero es negativo\n");
+            printf("El numero sera negativo\n");
         } else {
             if (nu == 0) {
-                printf("El numero es cero\n");
+                printf("El numero sera cero\n");
             }
         }
     }
