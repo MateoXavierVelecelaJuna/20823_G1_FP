@@ -11,7 +11,7 @@ int main() {
         scanf("%d", &intento);
 
         if (intento != contrasenaCorrecta) {
-            printf("Contraseña incorrecta. Intente nuevamente.\n");
+            printf("Contraseña incorrecta. Intente nuevamente porfavor.\n");
         }
 
     } while (intento != contrasenaCorrecta);
