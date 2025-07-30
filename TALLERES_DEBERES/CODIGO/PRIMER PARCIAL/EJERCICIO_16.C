@@ -7,6 +7,6 @@ int main() {
         su += nu;
     }
 
-    printf("La suma de los 10 primeros números naturales es: %d\n", su);
+    printf("La suma de los 10 primeros numeros naturales es: %d\n", su);
     return 0;
 }
