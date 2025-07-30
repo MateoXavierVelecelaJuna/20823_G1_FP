@@ -13,6 +13,6 @@ int main() {
 
     } while (nota < 0 || nota > 10);
 
-    printf("Nota válida ingresada: %.2f\n", nota);
+    printf("Nota valida ingresada: %.2f\n", nota);
     return 0;
 }
