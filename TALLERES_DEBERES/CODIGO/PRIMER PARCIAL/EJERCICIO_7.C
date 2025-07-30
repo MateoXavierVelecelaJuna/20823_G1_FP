@@ -5,7 +5,7 @@ int main()
 float altura, suma=0, max, min; 
     int contador=0;
     printf("Ejercicio 7: Maximo, minimo y media de alturas \n");
-    printf("Ingrese alturas positivas (para terminar ingrese un número negativo)\n");
+    printf("Ingrese alturas positivas (para terminar ingrese un numero negativo)\n");
     while (1) {
         printf("Altura %d: ", contador + 1);
         scanf("%f", &altura);
