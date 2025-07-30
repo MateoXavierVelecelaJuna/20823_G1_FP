@@ -7,7 +7,7 @@ int main() {
     printf("Ejercicio 20: Calcular el promedio de 5 números ingresados\n");
 
     for (p = 1; p <= 5; p++) {
-        printf("Ingrese el nmero %d: ", p);
+        printf("Ingrese el numero %d: ", p);
         scanf("%f", &nur);
         sum += nur;
     }
