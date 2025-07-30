@@ -3,7 +3,7 @@
 int main() {
  int numero1;
     printf("Ejercicio 12: Calcular si un numero es par o impar\n");
-    printf("Ingrese un número entero: ");
+    printf("Ingrese un numero entero: ");
     scanf("%d", &numero1);
 
     // IF COMPUESTO: if + else
