@@ -220,7 +220,7 @@ void agregarProducto() {
 
     // ID proveedor: debe existir y se autorellena
     do {
-        printf("Ingrese ID proveedor (solo números, se rellenara a 10 digitos): ");
+        printf("Ingrese ID proveedor (solo numeros, se rellenara a 10 digitos): ");
         char proveedorIDtemp[20];
         fgets(proveedorIDtemp, sizeof(proveedorIDtemp), stdin);
         proveedorIDtemp[strcspn(proveedorIDtemp, "\n")] = '\0';
@@ -382,7 +382,7 @@ void eliminarProducto() {
         if (strcmp(productos[i].id, id) == 0 && productos[i].activo) {
             productos[i].activo = 0;
             guardarEnArchivos();
-            printf("Producto eliminado lógicamente.\n");
+            printf("Producto eliminado logicamente.\n");
             pausa();
             return;
         }
@@ -695,3 +695,4 @@ int main() {
 
     return 0;
 }
+
