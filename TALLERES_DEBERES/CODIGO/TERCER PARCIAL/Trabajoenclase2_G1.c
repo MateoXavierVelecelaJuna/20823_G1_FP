@@ -47,13 +47,13 @@ int main() {
     fprintf(f, "Nombre: %s", nombre);
     fprintf(f, "Apellidos: %s", apellidos);
     fprintf(f, "Telefono: %s", telefono);
-    fprintf(f, "Dirección: %s y %s", callePrincipal, calleSecundaria);
+    fprintf(f, "DirecciÃ³n: %s y %s", callePrincipal, calleSecundaria);
     fprintf(f, "Correo electronico: %s", correo);
     fprintf(f, "-----------------------------\n\n");
 
     fclose(f);
 
-    printf("Contacto guardado con éxito en CarpetaSecreta/agenda.txt.\n");
+    printf("Contacto guardado con Ã©xito en CarpetaSecreta/agenda.txt.\n");
 
     return 0;
 }
